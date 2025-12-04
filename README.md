@@ -6,6 +6,8 @@ The goal of this project is to create a polished, fully functional portfolio tha
 
 The portfolio includes my demo reel, featured work, project breakdowns, and brand identity — all designed to reflect my personal style and professional direction.
 
+![Me!](images/pic-of-me.jpg)
+
 ## Requirements Addressed 🎯
 This project meets the cross-course portfolio objectives, including:
 
