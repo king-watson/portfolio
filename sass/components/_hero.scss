@@ -1,0 +1,164 @@
+body {
+    background-color: #000;
+}
+
+.hero {
+    display: grid; 
+     background-color: black;
+    padding-bottom: 50px;
+}
+
+.grid-con {
+  display: grid;
+}
+
+
+#hero-img {
+width: 90%;
+height: auto;
+margin: 30px auto 0;   
+border: 4px solid yellow;
+border-radius: 100%;
+box-shadow: 0 0 15px 1px yellow;
+display: block;        
+
+}
+
+#text-col h1{
+ color: #fff000;
+ padding-left: 20px;
+ font-size: 29px;
+}
+
+.p-topic {
+color: #fff000;
+padding-left: 20px;
+padding-right: 20px;
+font-size: 18px;
+}
+
+.p-desc{
+color: white;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+#m-text-col h1{
+ color: yellow;
+ padding-left: 20px;
+ font-size: 29px;
+}
+
+#m-text-col p{
+ color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  display: inline-block;        
+  padding: 12px 24px;   
+  color: black;                  
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;        
+  border: 2px solid #fff000;  
+  border-radius: 8px;          
+  cursor: pointer;             
+  transition: all 0.3s ease;   
+  margin-left: 20px;
+  background: linear-gradient(90deg, #fff000, #ffae00);
+  box-shadow: 0 0 15px #fff000;
+}
+
+
+.btn:hover {
+  background-color: #000;      
+  color: black;
+  transform: scale(1.05);   
+}
+
+.box {
+  background: #111;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #fff000;
+}
+
+
+.box-title {
+  color: #fff000;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.box-sub {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+
+.box-img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .box {
+  background: #111;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #fff000; 
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+.box-img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+#hero-video {
+  width: 95%;        
+  height: auto;
+  display: block;    
+}
+
+.section-line {
+  border: 0;
+  height: 2px;             
+  background: #fff000;     
+  width: auto;              
+}
+
+.demo-reel {
+    color: #fff000;
+    background-color: black;
+    padding-left: 45px;
+     padding-right: 55px;
+     margin-bottom: 35px;
+}
+
