@@ -67,11 +67,11 @@ function showReplacementItems() {
 function handleToggle() {
   if (showingOriginal) {
     showReplacementItems();
-    loadMoreButton.textContent = "Show Less";
+    loadMoreButton.textContent = "Motion/Graphics";
     showingOriginal = false;
   } else {
     portfolioContainer.innerHTML = originalItems;
-    loadMoreButton.textContent = "View More";
+    loadMoreButton.textContent = "Code Like";
     showingOriginal = true;
   }
 }
@@ -79,10 +79,10 @@ function handleToggle() {
 loadMoreButton.addEventListener("click", handleToggle);
 
 const replacementItems = [
-  { image: "img7.jpg", title: "Title 7", description: "Description for item 7." },
-  { image: "img8.jpg", title: "Title 8", description: "Description for item 8." },
-  { image: "img9.jpg", title: "Title 9", description: "Description for item 9." },
-  { image: "img10.jpg", title: "Title 10", description: "Description for item 10." },
+  { image: "img7.jpg", title: "HTML", description: "Description for item 7." },
+  { image: "img8.jpg", title: "CSS", description: "Description for item 8." },
+  { image: "img9.jpg", title: "Java Script", description: "Description for item 9." },
+  { image: "img10.jpg", title: "SASS", description: "Description for item 10." },
   { image: "img11.jpg", title: "Title 11", description: "Description for item 11." },
   { image: "img12.jpg", title: "Title 12", description: "Description for item 12." }
 ];
