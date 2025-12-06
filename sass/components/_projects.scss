@@ -80,3 +80,24 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
 }
+
+.service-box {
+  background: #111;
+  padding: 10px;
+  border: 2px solid #fff000;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.service-box h3 {
+  font-size: 15px;
+  margin: 0;
+}

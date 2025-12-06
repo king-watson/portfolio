@@ -1,0 +1,35 @@
+.portfolio-box {
+  background: #111;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.portfolio-box img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.load-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#load-more-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background: #fff000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#load-more-btn:hover {
+  background: #ffe600;
+}
+
