@@ -31,12 +31,12 @@ const portfolioContainer = document.querySelector("#portfolio-container");
 let showingOriginal = true;
 
 const replacementItems = [
-  { image: "img7.jpg", title: "HTML", description: "Description for item 7." },
-  { image: "img8.jpg", title: "CSS", description: "Description for item 8." },
-  { image: "img9.jpg", title: "JavaScript", description: "Description for item 9." },
-  { image: "img10.jpg", title: "SASS", description: "Description for item 10." },
-  { image: "img11.jpg", title: "Title 11", description: "Description for item 11." },
-  { image: "img12.jpg", title: "Title 12", description: "Description for item 12." }
+  { image: "images/html-logo.svg", title: "HTML"},
+  { image: "images/css-logo.svg", title: "CSS"},
+  { image: "images/js-logo.svg", title: "JavaScript"},
+  { image: "images/sass-logo.svg", title: "SASS"},
+  { image: "images/gsap-logo.svg", title: "Greensock"},
+  { image: "images/php-logo.svg", title: "PHP"}
 ];
 
 function showReplacementSet() {
@@ -49,7 +49,6 @@ function showReplacementSet() {
     newBox.innerHTML = `
       <img src="${item.image}" alt="">
       <h3>${item.title}</h3>
-      <p>${item.description}</p>
     `;
 
     portfolioContainer.appendChild(newBox);

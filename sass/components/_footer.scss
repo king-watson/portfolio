@@ -16,10 +16,11 @@
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: "Figtree", sans-serif;
 }
 
 .site-footer a:hover {
-    color: white;
+    color: yellow;
 }
 
 .site-footer .footer-container {
@@ -30,11 +31,18 @@
     margin: 0 auto;
 }
 
-.site-footer h3, .site-footer h4 {
-    color: white;
+.site-footer h3 {
+    color: #fff000;
     margin-bottom: 15px;
     font-family: 'Special Gothic Expanded One', sans-serif;
+    letter-spacing: 1px;
+}
 
+.site-footer h4 {
+    color: yellow;
+    margin-bottom: 15px;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    letter-spacing: 1px;
 }
 
 .site-footer p {

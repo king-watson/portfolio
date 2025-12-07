@@ -28,6 +28,9 @@ display: block;
  color: #fff000;
  padding-left: 20px;
  font-size: 29px;
+ font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+ margin-top: 60px;
 }
 
 .p-topic {
@@ -35,12 +38,14 @@ color: #fff000;
 padding-left: 20px;
 padding-right: 20px;
 font-size: 18px;
+font-family: "Figtree", sans-serif;
 }
 
 .p-desc{
 color: white;
 padding-left: 20px;
 padding-right: 20px;
+font-family: "Figtree", sans-serif;
 }
 
 #m-text-col h1{
@@ -53,6 +58,7 @@ padding-right: 20px;
  color: white;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: "Figtree", sans-serif;
 }
 
 .btn {
@@ -69,6 +75,7 @@ padding-right: 20px;
   margin-left: 20px;
   background: linear-gradient(90deg, #fff000, #ffae00);
   box-shadow: 0 0 15px #fff000;
+  font-family: "Figtree", sans-serif;
 }
 
 
@@ -77,6 +84,80 @@ padding-right: 20px;
   color: black;
   transform: scale(1.05);   
 }
+
+@media (min-width: 768px) {
+  .hero {
+    align-items: center; 
+  }
+
+  #text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  #text-col h1,
+  .p-topic,
+  .p-desc {
+    padding-left: 0;  
+    padding-right: 0;
+    text-align: left; 
+  }
+  #text-col h1 {
+    font-size: 25px;
+  }
+  .p-topic,
+  .p-desc {
+    padding-left: 0;  
+    padding-right: 0;
+    text-align: left; 
+    font-size: 15px;
+  }
+  .btn {
+    margin-left: 0;        
+    align-self: flex-start;  
+    width: auto;             
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    align-items: center; 
+  }
+
+  #text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  #text-col h1,
+  .p-topic,
+  .p-desc {
+    padding-left: 0;  
+    padding-right: 0;
+    text-align: left; 
+    margin-left: 20px;
+  }
+  #text-col h1 {
+    font-size: 31px;
+  }
+  .p-topic,
+  .p-desc {
+    padding-left: 0;  
+    padding-right: 0;
+    text-align: left; 
+    font-size: 20px;
+  }
+  .btn {
+    margin-left: 0;          
+    align-self: flex-start;  
+    width: auto;  
+     margin-left: 20px;        
+  }
+  
+}
+
 
 .box {
   background: #111;
@@ -161,4 +242,5 @@ padding-right: 20px;
      padding-right: 55px;
      margin-bottom: 35px;
 }
+
 

@@ -1,20 +1,24 @@
 .contact-cta {
   display: flex;
-  align-items: center;       /* vertically center items */
-  justify-content: flex-start; /* keep items to the left */
-  gap: 40px;                 /* spacing between items */
-  flex-wrap: wrap;           /* allow wrapping on smaller screens */
+  align-items: center;       
+  justify-content: flex-start; 
+  gap: 40px;              
+  flex-wrap: wrap;         
+  background-color: #111;
+  padding: 35px;
 }
 
 .contact-text {
-  flex: 1 1 400px;          /* take available space, min-width 400px */
-  max-width: 600px;         /* optional: limit width on large screens */
+  flex: 1 1 400px;        
+  max-width: 600px;      
 }
 
 .contact-text h2 {
   font-size: 30px;
-  margin: 50px 0 10px 0;   /* top + bottom spacing */
+  margin: 50px 0 10px 0;  
   color: #fff000;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  letter-spacing: 1px;
 }
 
 .contact-text p {
@@ -22,6 +26,7 @@
   font-size: 15px;
   line-height: 1.4em;
   color: white;
+  font-family: "Figtree", sans-serif;
 }
 
 .contact-circle {
@@ -46,7 +51,7 @@
 }
 
 .contact-img {
-  width: 200px;               /* adjust size */
+  width: 200px;            
   height: auto;
 }
 
