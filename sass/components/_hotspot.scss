@@ -24,19 +24,22 @@
 }
 
 #load-more-btn {
-  padding: 12px 30px;
-  font-size: 1.1rem;
+  background: none;
   border: none;
-  border-radius: 12px;
-  background: #fff000;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;      /* optional: adjust */
+  font-weight: normal;  /* optional */
+  color: #fff;          /* or whatever color you want */
+  cursor: pointer;      /* remove this if you don't want a pointer */
+  text-align: left;
 }
 
 #load-more-btn:hover {
-  background: blueviolet;
+  color: #ccc;   /* subtle hover, optional */
+  background: none; /* make sure no background appears */
 }
+
 
 @media (min-width: 769px) {
   #portfolio-container.grid-con {
@@ -53,5 +56,22 @@
     padding: 0 20px;
   }
 }
+
+@media (min-width: 769px) {
+  #load-more.grid-con {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #load-more.grid-con {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
 
 

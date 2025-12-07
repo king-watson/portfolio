@@ -1,0 +1,101 @@
+.contact-page {
+  display: grid;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center; /* centers text inside each grid item */
+}
+
+.contact-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff000;
+  margin-top: 0;
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 12px;
+  color: white; /* text color */
+  margin-bottom: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #fff000; /* yellow border */
+  background: #333; /* slightly darker for input fields */
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc; /* lighter placeholder */
+}
+
+.form-button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* push button to the right */
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #fff000, #ff7f00); /* yellow to orange gradient */
+  color: #111; /* dark text on gradient */
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 275px;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 20px #fff000;
+}
+
+@media (min-width: 769px) {
+  .contact-form button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #fff000, #ff7f00); /* yellow to orange gradient */
+  color: #111; /* dark text on gradient */
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 600px;
+}
+
+.contact-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff000;
+  margin-top: 50px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 12px;
+  color: white; /* text color */
+  margin-bottom: 0px;
+}
+}
+

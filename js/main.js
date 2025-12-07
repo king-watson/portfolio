@@ -22,37 +22,29 @@
     
 })();
 
-// Toggles for the skills part
-
-const workBoxes = document.querySelectorAll('.work-box');
-
-function toggleWorkDescription(event) {
-  const box = event.currentTarget;
-  box.classList.toggle('active');
-}
-
-workBoxes.forEach(function(box) {
-  box.addEventListener('click', toggleWorkDescription);
-});
+// Software Part
 
 const loadMoreButton = document.querySelector("#load-more-btn");
+const portfolioBoxes = document.querySelectorAll(".portfolio-box");
 const portfolioContainer = document.querySelector("#portfolio-container");
-
-const originalItems = portfolioContainer.innerHTML;
 
 let showingOriginal = true;
 
-function showReplacementItems() {
+const replacementItems = [
+  { image: "img7.jpg", title: "HTML", description: "Description for item 7." },
+  { image: "img8.jpg", title: "CSS", description: "Description for item 8." },
+  { image: "img9.jpg", title: "JavaScript", description: "Description for item 9." },
+  { image: "img10.jpg", title: "SASS", description: "Description for item 10." },
+  { image: "img11.jpg", title: "Title 11", description: "Description for item 11." },
+  { image: "img12.jpg", title: "Title 12", description: "Description for item 12." }
+];
+
+function showReplacementSet() {
   portfolioContainer.innerHTML = "";
 
   replacementItems.forEach(function(item) {
     const newBox = document.createElement("div");
-    newBox.classList.add(
-      "portfolio-box",
-      "col-span-2",
-      "m-col-span-4",
-      "l-col-span-4"
-    );
+    newBox.classList.add("portfolio-box", "col-span-2", "m-col-span-4", "l-col-span-4");
 
     newBox.innerHTML = `
       <img src="${item.image}" alt="">
@@ -62,29 +54,35 @@ function showReplacementItems() {
 
     portfolioContainer.appendChild(newBox);
   });
+
+  addToggleListenerAgain();
 }
 
-function handleToggle() {
+function showOriginalSet() {
+  portfolioContainer.innerHTML = "";
+
+  portfolioBoxes.forEach(function(box) {
+    portfolioContainer.appendChild(box);
+  });
+
+  addToggleListenerAgain();
+}
+
+function handleToggleView() {
   if (showingOriginal) {
-    showReplacementItems();
-    loadMoreButton.textContent = "Motion/Graphics";
+    showReplacementSet();
+    loadMoreButton.textContent = "Go back...";
     showingOriginal = false;
   } else {
-    portfolioContainer.innerHTML = originalItems;
-    loadMoreButton.textContent = "Code Like";
+    showOriginalSet();
+    loadMoreButton.textContent = "See more...";
     showingOriginal = true;
   }
 }
 
-loadMoreButton.addEventListener("click", handleToggle);
+function addToggleListenerAgain() {
+  const newButton = document.querySelector("#load-more-btn");
+  newButton.addEventListener("click", handleToggleView);
+}
 
-const replacementItems = [
-  { image: "img7.jpg", title: "HTML", description: "Description for item 7." },
-  { image: "img8.jpg", title: "CSS", description: "Description for item 8." },
-  { image: "img9.jpg", title: "Java Script", description: "Description for item 9." },
-  { image: "img10.jpg", title: "SASS", description: "Description for item 10." },
-  { image: "img11.jpg", title: "Title 11", description: "Description for item 11." },
-  { image: "img12.jpg", title: "Title 12", description: "Description for item 12." }
-];
-
-
+loadMoreButton.addEventListener("click", handleToggleView);
