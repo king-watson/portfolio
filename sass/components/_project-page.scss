@@ -1,0 +1,247 @@
+.p-contact-page {
+  display: grid;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.p-contact-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #fff000;
+  margin-top: 0;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  letter-spacing: 1px;
+}
+
+.p-contact-text p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Figtree", sans-serif;
+}
+
+@media (min-width: 769px) {
+.p-contact-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff000;
+  margin-top: 50px;
+}
+
+.p-contact-text p {
+ font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Figtree", sans-serif;
+}
+}
+
+.grid-con {
+  display: grid;
+}
+
+.p-featured-work {
+  background: black;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff000;
+}
+
+.p-work-box {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   margin: 0 auto 25px auto; 
+  width: 90%; 
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.p-work-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 221, 0, 0.3);
+}
+
+.p-work-img {
+  width: 70%;
+  height: auto;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  margin: 0 auto; 
+  padding-top: 5px;
+}
+
+.p-work-title {
+  margin: 15px 0 10px 0;
+  font-size: 1.2rem;
+  color: #fff000;
+   font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+}
+
+.p-work-desc {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  padding: 0 15px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.p-work-box.active .work-desc {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.p-btn-featured {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+  background: #111;     
+  color: #fff000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.p-btn-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
+}
+
+.p-service-box {
+  background: #111;
+  padding: 10px;
+  border: 2px solid #fff000;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.p-service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.p-service-box h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (min-width: 768px) { 
+ .p-work-box {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;        
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.p-work-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.p-btn-featured {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+  background: #111;     
+  color: #fff000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+.p-btn-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
+}
+
+}
+
+@media (min-width: 1024px) { 
+ .p-work-box {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;        
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.p-work-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.p-btn-featured {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+  background: #111;     
+  color: #fff000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+.p-btn-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
+}
+
+}

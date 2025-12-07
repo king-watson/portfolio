@@ -159,3 +159,49 @@
 }
 
 }
+
+@media (min-width: 1024px) { 
+ .work-box {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;        
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.work-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.btn-featured {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+  background: #111;     
+  color: #fff000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   font-family: "Special Gothic Expanded One", sans-serif;
+ letter-spacing: 1px;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+.btn-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
+}
+
+}
