@@ -40,7 +40,7 @@
   width: 70%;
   height: auto;
   display: block;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   margin: 0 auto; 
   padding-top: 5px;
 }
@@ -131,7 +131,7 @@
   width: 80%;
   height: auto;
   display: block;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   margin: 0 auto;
   padding-top: 5px;
 }
@@ -177,7 +177,7 @@
   width: 80%;
   height: auto;
   display: block;
-  border-radius: 16px 16px 0 0;
+  border-radius: 12px;
   margin: 0 auto;
   padding-top: 5px;
 }
@@ -204,4 +204,10 @@
   box-shadow: 0 8px 20px rgba(255, 221, 0, 0.4);
 }
 
+}
+
+.p-work-box-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
