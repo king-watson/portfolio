@@ -173,4 +173,59 @@
   }
 }
 
+/* Container for the video section */
+.seven-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* Wrapper to handle grid and sizing */
+.seven-video-wrapper {
+  width: 100%;
+  max-width: 1200px; /* optional, limits the max width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the video element itself */
+.seven-video-element {
+  width: 100%;        
+  height: auto;
+  display: block;    
+  border-radius: 12px; /* optional, for a smoother look */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* optional depth */
+}
+
+.seven-result {
+  background-color: black;
+}
+
+.seven-result-text {
+  text-align: left;
+}
+
+.seven-result-title {
+ font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff000;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  letter-spacing: 1px;
+}
+
+.seven-result-desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  font-family: "Figtree", sans-serif;
+}
+
+
 
