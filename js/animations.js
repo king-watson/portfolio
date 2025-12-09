@@ -275,3 +275,18 @@ function animateFooter() {
 
 animateFooter();
 
+gsap.from(".p-contact-text", { y: 50, opacity: 0, duration: 1, ease: "power2.out" });
+
+gsap.from(".p-work-box", {
+    scrollTrigger: {
+        trigger: ".p-featured-work",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2
+});
+
