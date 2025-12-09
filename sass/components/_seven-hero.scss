@@ -159,7 +159,6 @@
   object-fit: cover;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .seven-deepdive-wrapper {
     grid-column: span 4 !important; 
@@ -173,34 +172,32 @@
   }
 }
 
-/* Container for the video section */
 .seven-video {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: black;
-  padding-bottom: 30px;
   padding-top: 30px;
 }
 
-/* Wrapper to handle grid and sizing */
+
 .seven-video-wrapper {
   width: 100%;
-  max-width: 1200px; /* optional, limits the max width */
+  max-width: 1200px; 
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Style for the video element itself */
+
 .seven-video-element {
   width: 100%;        
   height: auto;
   display: block;    
-  border-radius: 12px; /* optional, for a smoother look */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* optional depth */
+  border-radius: 12px; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5); 
 }
 
 .seven-result {
