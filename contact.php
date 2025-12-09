@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kingsley's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="full-width-header">
+    <div class="grid-con">
+      <a href="index.html" id="header-logo" class="col-start-1 col-end-2 m-col-span-3 l-col-span-3">
+        <img src="images/port-logo.png" alt="Kingsleys Logo">
+      </a>
+
+      <button class="col-start-4" id="hamburger">&#9776;</button>
+
+      <div id="menu" class="overlay m-col-start-8 m-col-end-13 l-col-start-9 l-col-end-13">
+        <button id="close">&times;</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<section class="contact-page grid-con">
+
+  <div class="contact-text col-span-full">
+    <h2>Welcome!</h2>
+    <p>I'm really excited to work with you!</p>
+  </div>
+
+  <!-- Message returned from send.php -->
+  <?php if ($msg): ?>
+    <p class="col-span-full">
+        <?php echo htmlspecialchars($msg, ENT_QUOTES, 'UTF-8'); ?></p>
+
+  <!-- Contact Form -->
+  <form class="contact-form col-span-full" action="send.php" method="POST">
+
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="last_name" placeholder="Last Name" required>
+
+    <input type="email" name="email" placeholder="Email" required>
+
+    <textarea name="message" placeholder="Enter message here" rows="10" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+</section>
+
+<footer class="site-footer">
+  <hr>
+  <div class="footer-container grid-con">
+    <div class="footer-about col-span-4 m-col-span-4 l-col-span-4">
+      <h3>Kingsley Watson</h3>
+      <p>I'm always open to new projects and collaborations. Feel free to reach out to me anytime!</p>
+    </div>
+
+    <div class="footer-links col-span-4 m-col-span-4 l-col-span-4">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social col-span-4 m-col-span-4 l-col-span-4">
+      <h4>Follow Me</h4>
+      <ul class="social-icons">
+        <li><a href="#"><img src="images/insta-logo.svg" alt="Instagram"></a></li>
+        <li><a href="#"><img src="images/facebook-logo.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="images/x-logo1.svg" alt="X"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kingsley Watson. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
