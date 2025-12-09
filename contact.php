@@ -44,12 +44,10 @@ ini_set('display_errors', 1);
     <p>I'm really excited to work with you!</p>
   </div>
 
-  <!-- Message returned from send.php -->
   <?php if ($msg): ?>
     <p class="col-span-full">
         <?php echo htmlspecialchars($msg, ENT_QUOTES, 'UTF-8'); ?></p>
 
-  <!-- Contact Form -->
   <form class="contact-form col-span-full" action="send.php" method="POST">
 
     <input type="text" name="first_name" placeholder="First Name" required>
@@ -95,7 +93,12 @@ ini_set('display_errors', 1);
     <p>&copy; 2025 Kingsley Watson. All rights reserved.</p>
   </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>
 

@@ -11,7 +11,6 @@
         $subject = 'Inquiry from mydomain.com';
 
         $first_raw = $_POST['first_name'] ?? '';
-        $last_raw = $_POST['last_name'] ?? '';
         $email_raw = $_POST['email'] ?? '';
         $msg_raw = $_POST['message'] ?? '';
 
@@ -30,10 +29,6 @@
 
         if ($first === '') {
             $fail[] = 'first_name';
-        }
-
-        if ($last === '') {
-            $fail[] = 'last_name';
         }
 
         if (!$visitor_email) {

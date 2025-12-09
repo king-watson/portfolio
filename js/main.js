@@ -5,8 +5,7 @@
     const hamburger = document.querySelector('#hamburger');
     const closeButton = document.querySelector('#close');
     const menuLinks = document.querySelectorAll('#menu nav ul li a');
-
-
+    
     function toggleMenu() {
         menu.classList.toggle('open');
         document.body.classList.toggle("no-scroll");
@@ -85,3 +84,4 @@ function addToggleListenerAgain() {
 }
 
 loadMoreButton.addEventListener("click", handleToggleView);
+
