@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-con {
+  display: grid;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Hero */
+
+.hero {
+  flex: 1;
+}
+
+.hero-inner {
+  align-items: center;
+  row-gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-left h1 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+}
+
+.hero-left p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.greeting-badge {
+  display: inline-block;
+  border: 1px solid yellow;
+  color: yellow;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  width: fit-content;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: yellow;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: yellow;
+  color: black;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 255, 150);
+}
+
+.btn-secondary {
+  border: 1px solid yellow;
+  color: yellow;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: yellow;
+  color: #000000;
+}
+
+
+/* Photo */
+
+.photo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid yellow;
+  background-color: #111111;
+  display: block;
+}
+
+.badge-circle {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: yellow;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+  border: 3px solid #ffffff;
+}
+
+.tag {
+  position: absolute;
+  background-color: #111111;
+  border: 1px solid #333333;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tag-designer {
+  bottom: 60px;
+  left: -30px;
+  border-left: 3px solid yellow;
+}
+
+.tag-ux {
+  top: 80px;
+  right: -20px;
+  border-left: 3px solid yellow;
+}
+
+
+/* Ticker */
+
+.ticker-bar {
+  background-color: yellow;
+  overflow: hidden;
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 60px;
+  animation: ticker 60s linear infinite;
+}
+
+.ticker-track span {
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* About */
+
+.about-section {
+  background-color: rgb(4, 4, 4);
+  padding: 100px 10px;
+  color: black;
+}
+
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-pill {
+  font-family: 'Figtree', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.about-heading-wrap {
+  margin-bottom: 8px;
+  margin-top: 50px;
+}
+
+.about-heading {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+.about-highlight {
+  color: yellow;
+}
+
+.about-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 28px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  grid-column: span 4;
+}
+
+.about-card:hover {
+  background-color: yellow;
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-family: 'Figtree', sans-serif;
+  font-size: 13px;
+  color: black;
+  line-height: 1.6;
+}
+
+
+/* Buttons */
+
+.btn-contact {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.btn-contact:hover {
+  opacity: 0.85;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .photo-wrapper {
+    width: 300px;
+    height: 380px;
+    margin-left: 60px;
+  }
+}

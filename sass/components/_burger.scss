@@ -1,0 +1,213 @@
+html {
+    background-color: white;
+}
+
+.full-width-header {
+  background-color: black; 
+  color: #fff;
+  margin: 0;
+}
+
+.grid-con {
+  display: grid;
+}
+
+#header-logo img {
+  height: 70px; 
+  width: auto;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: black;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  margin: 0;
+}
+
+#hamburger, #close {
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: #ffff00;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  justify-content: center;
+  align-items: center;
+   z-index: 10000;
+}
+
+.overlay.open {
+  display: flex;
+}
+
+#close {
+  position: absolute;
+  top: 30px;
+  right: 55px;
+}
+
+#menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#menu li {
+  margin: 20px 0;
+}
+
+#menu a {
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  font-family: "Figtree", sans-serif;
+}
+
+#menu a:hover {
+  color: #ffff00;
+}
+
+.nav-cta {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .no-scroll {
+    overflow: auto;
+    height: auto;
+  }
+
+  #hamburger, #close {
+    display: none;
+  }
+
+  .overlay {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+  }
+
+  #menu ul {
+    display: flex;
+    margin-left: 20px;      // remove the left margin pushing it off
+    margin-top: 10px;
+    gap: 20px;           // use gap instead of margin on each li
+  }
+
+  #menu ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  #menu ul li a {
+    color: #ffff00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: 16px;     // slightly smaller so it fits on tablet
+  }
+
+  #menu ul li a:hover {
+    color: white;
+  }
+
+  #header-logo img {
+    height: 75px;
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .nav-cta {
+    display: block;
+    margin-right: 20px;  // push contact button away from edge
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .no-scroll {
+    overflow: auto;
+    height: auto;
+  }
+
+  #hamburger, #close {
+    display: none;
+  }
+
+  .overlay {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+  }
+
+  #menu ul {
+    display: flex;
+    margin-left: 60px;      // remove the left margin pushing it off
+    margin-top: 10px;
+    gap: 20px;           // use gap instead of margin on each li
+  }
+
+  #menu ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  #menu ul li a {
+    color: #ffff00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: 20px;     // slightly smaller so it fits on tablet
+  }
+
+  #menu ul li a:hover {
+    color: white;
+  }
+
+  #header-logo img {
+    height: 100px;
+    width: auto;
+    margin-left: 0px;
+  }
+
+ 
+  .nav-cta {
+    display: block;
+    margin-right: 20px;  // push contact button away from edge
+  }
+}
