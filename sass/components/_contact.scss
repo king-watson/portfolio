@@ -1,0 +1,71 @@
+.hidden {
+  display: none !important;
+}
+
+.contact-cta {
+  background-color: rgb(5, 5, 5);
+  margin-bottom: 50px;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 80px 0;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-pill {
+  font-family: 'Figtree', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #ffff00;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.contact-heading {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: clamp(40px, 7vw, 96px);
+  color: white;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-sub {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  color: grey;
+}
+
+.contact-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ffff00;
+  color: #ffff00;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ffff00;
+    color: black;
+  }
+}
