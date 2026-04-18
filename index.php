@@ -22,9 +22,9 @@ $projects = $db->query('SELECT * FROM projects WHERE is_deleted = 0 ORDER BY cre
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-  <link href="/watson-kingsley-portfolio/css/main.css" rel="stylesheet">
-  <link href="/watson-kingsley-portfolio/css/grid.css" rel="stylesheet">
-  <link href="/watson-kingsley-portfolio/css/admin.css" rel="stylesheet">
+  <link href="/portfolio/css/main.css" rel="stylesheet">
+  <link href="/portfolio/css/grid.css" rel="stylesheet">
+  <link href="/portfolio/css/admin.css" rel="stylesheet">
   <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
